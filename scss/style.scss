@@ -1,5 +1,7 @@
 @import "./utilities/variables";
 @import "./utilities/mixins";
+@import "./base/reset";
+@import "./base/fonts";
 @import "./layout/header";
 @import "./layout/index-main";
 @import "./layout/footer";
@@ -9,3 +11,7 @@
 @import "./layout/contact-main";
 @import "./components/buttons";
 @import "./components/cards";
+@import "./layout/media/index-media-768";
+@import "./layout/media/index-media-620";
+@import "./layout/media/index-media-320";
+@import "./layout/media/about-media-576";
