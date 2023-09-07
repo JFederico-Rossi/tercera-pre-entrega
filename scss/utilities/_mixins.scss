@@ -14,3 +14,11 @@
     line-height: $height;
     text-shadow: $shadow;
 }
+
+@mixin font-h2{
+    color: black;
+    font-family: $font-principal;
+    font-weight: 600;
+    line-height: 3.25rem;
+    text-shadow:0.025rem 0.025rem #000003;
+}

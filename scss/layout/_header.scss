@@ -1,5 +1,5 @@
 header{
-    @include flex (row, wrap, space-between, flex-end, 1.25rem);
+    @include flex (row, nowrap, space-between, flex-end, 1.25rem);
     border-bottom: $borde-abajo;
     img{
         width: 4.25rem;

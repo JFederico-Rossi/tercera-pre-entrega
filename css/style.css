@@ -7,12 +7,13 @@
 
 body {
   background-image: linear-gradient(to right top, #f7fdfd, #eaf6ef, #e8ebdb, #efdeca, #f6cfc6);
+  width: 100%;
 }
 
 header {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-end;
   gap: 1.25rem;
@@ -48,6 +49,123 @@ header a {
   font-weight: 600;
   line-height: 3.25rem;
   text-shadow: 0.025rem 0.025rem #000003;
+}
+
+.main-pic {
+  background-image: url("../assets/images/cover-pic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 18.75rem;
+  margin-top: 0.125rem;
+}
+.main-pic h1 {
+  width: 35%;
+  text-align: center;
+  color: #fffff1;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 900;
+  line-height: 3.25rem;
+  text-shadow: 0.02rem 0.01rem #fffff3;
+  padding-top: 1.625rem;
+  padding-left: 0.625rem;
+}
+
+.mandala {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: auto 12.5rem;
+  justify-content: center;
+  border-bottom: solid 0.0625rem #D9D9D9;
+  padding-bottom: 2rem;
+}
+.mandala .img-mandala {
+  display: grid;
+  width: 80%;
+  grid-column: 1/2;
+  grid-row: 1/4;
+  padding-top: 1rem;
+}
+.mandala img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+  opacity: 75%;
+}
+.mandala h2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-self: center;
+  justify-self: center;
+  color: black;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 600;
+  line-height: 3.25rem;
+  text-shadow: 0.025rem 0.025rem #000003;
+  padding-top: 1rem;
+}
+.mandala p {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
+  font-family: "Nanum Myeongjo", serif;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 1rem;
+  border: solid 0.0625rem #D9D9D9;
+}
+.gallery img {
+  width: 12.5rem;
+  height: 12.5rem;
+  opacity: 75%;
+  object-fit: cover;
+}
+
+.gallery-h2 {
+  text-align: center;
+  color: black;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 600;
+  line-height: 3.25rem;
+  text-shadow: 0.025rem 0.025rem #000003;
+}
+
+.mandala button {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  align-self: center;
+  justify-self: center;
+  font-size: 0.9rem;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+button {
+  background-color: #D9D9D9;
+  box-shadow: 0.125rem 0.125rem 10rem rgba(255, 228, 196, 0.314);
+  border-radius: 1rem;
+  border-color: rgb(200, 184, 165);
+  padding: 0.425rem;
+  margin-top: 0.625rem;
+}
+
+button a {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.25rem;
+  word-spacing: 0.1rem;
+  text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
