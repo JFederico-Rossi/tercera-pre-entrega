@@ -1,0 +1,24 @@
+@media (max-width: 620px) {
+    .mandala{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: $borde-abajo;
+    }
+    .img-mandala{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+
+    img{
+        display: flex;
+        align-items: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    p{
+        width: 50%;
+    }
+}
+}

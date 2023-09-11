@@ -1,0 +1,23 @@
+@media (max-width: 450px) {
+    .main-pic{
+        background-image: url("../assets/images/cover-pic.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 15rem;
+    }
+    .mandala{
+        p{
+            width: 80%;
+        }
+    }
+    .gallery{
+        flex-direction: column;
+        img{
+            width: 9rem;
+            height: 9rem;
+        }
+        .pic-no{
+            display:none;
+        }
+    }
+}
