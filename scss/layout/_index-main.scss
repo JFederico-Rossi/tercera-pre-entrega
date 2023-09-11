@@ -21,7 +21,6 @@
     border-bottom: $borde-abajo;
     padding-bottom: 2rem;
 
-}
     .img-mandala{
         display: grid;
         width: 80%;
@@ -48,7 +47,7 @@
             animation-duration: 30s;
             animation-delay: 0.5s;
         }
-      
+    }
     h2{
         grid-column: 2/3;
         grid-row: 1/2;
@@ -67,7 +66,7 @@
         line-height: 1.5rem;
         text-align: center;
     }
-
+}
 .gallery{
     @include flex (row, wrap, center, center, .75rem);
     padding-bottom: 1rem;
@@ -83,5 +82,4 @@
 .gallery-h2{
     text-align: center;
     @include font-h2;
-}
 }
