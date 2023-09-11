@@ -79,20 +79,34 @@ header a {
   border-bottom: solid 0.0625rem #D9D9D9;
   padding-bottom: 2rem;
 }
-.mandala .img-mandala {
+
+.img-mandala {
   display: grid;
   width: 80%;
   grid-column: 1/2;
   grid-row: 1/4;
   padding-top: 1rem;
 }
-.mandala img {
+@keyframes rotate-mandala {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.img-mandala img {
   width: 100%;
   border-radius: 50%;
   object-fit: contain;
   opacity: 75%;
+  animation-name: rotate-mandala;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-delay: 0.5s;
 }
-.mandala h2 {
+.img-mandala h2 {
   grid-column: 2/3;
   grid-row: 1/2;
   align-self: center;
@@ -104,7 +118,7 @@ header a {
   text-shadow: 0.025rem 0.025rem #000003;
   padding-top: 1rem;
 }
-.mandala p {
+.img-mandala p {
   grid-column: 2/3;
   grid-row: 2/3;
   align-self: center;
@@ -113,8 +127,7 @@ header a {
   line-height: 1.5rem;
   text-align: center;
 }
-
-.gallery {
+.img-mandala .gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -124,14 +137,13 @@ header a {
   padding-bottom: 1rem;
   border: solid 0.0625rem #D9D9D9;
 }
-.gallery img {
+.img-mandala .gallery img {
   width: 12.5rem;
   height: 12.5rem;
   opacity: 75%;
   object-fit: cover;
 }
-
-.gallery-h2 {
+.img-mandala .gallery-h2 {
   text-align: center;
   color: black;
   font-family: "Nanum Myeongjo", serif;
