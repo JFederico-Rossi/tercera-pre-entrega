@@ -1,0 +1,24 @@
+@media (max-width: 576px){
+    .about-section-first{
+        flex-direction: column;
+        width: 100%;
+        .about-text-first{
+            width: 90%;
+        }
+        }
+        .yoga-icons{
+            margin: 0 20%;
+        }
+    .container{
+            .card-benefits{
+                img{
+                    width: 3.75rem;
+                    height: 3.75rem;
+                }
+                p{
+                    font-size: .9375rem;
+                    width: 70%;
+                }
+        }
+    }
+}
