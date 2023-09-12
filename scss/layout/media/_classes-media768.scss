@@ -1,0 +1,15 @@
+/** Classes Media Queries **/
+
+@media (max-width: 768px) {
+    .card-items{
+        h3{
+            font-size: 1.375rem;
+        }
+        p{
+            font-size: .875rem;
+        }
+        button{
+            font-size: .875rem;
+        }
+    }
+}

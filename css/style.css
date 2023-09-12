@@ -32,7 +32,7 @@ header nav {
   align-items: flex-end;
   gap: none;
 }
-header ul {
+header nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -42,7 +42,13 @@ header ul {
   list-style: none;
   padding-right: 1.25rem;
 }
-header a {
+header nav ul li {
+  transition: transform 0.2s linear;
+}
+header nav ul li:hover {
+  transform: scale(1.2);
+}
+header nav ul li a {
   text-decoration: none;
   color: black;
   font-family: "Nanum Myeongjo", serif;
@@ -102,7 +108,7 @@ header a {
   animation-name: rotate-mandala;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-duration: 30s;
+  animation-duration: 50s;
   animation-delay: 0.5s;
 }
 .mandala h2 {
@@ -164,7 +170,7 @@ footer img {
   margin: 6.25rem 0.2rem 0;
 }
 
-.about-section-first {
+.about-section-first, .our-programs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -175,10 +181,10 @@ footer img {
   width: 100%;
   padding-bottom: 1rem;
 }
-.about-section-first .about-text-first {
+.about-section-first .about-text-first, .our-programs .about-text-first, .our-programs .card-programs .card-items {
   width: 40%;
 }
-.about-section-first .about-text-first h2 {
+.about-section-first .about-text-first h2, .our-programs .about-text-first h2, .our-programs .card-programs .card-items h2 {
   color: black;
   font-family: "Nanum Myeongjo", serif;
   font-weight: 600;
@@ -186,20 +192,20 @@ footer img {
   text-shadow: 0.025rem 0.025rem #000003;
   text-align: center;
 }
-.about-section-first .about-text-first p {
+.about-section-first .about-text-first p, .our-programs .about-text-first p, .our-programs .card-programs .card-items p {
   font-family: "Nanum Myeongjo", serif;
   text-align: center;
   width: 100%;
   padding: 0 2rem 0 2rem;
 }
-.about-section-first .about-img-first {
+.about-section-first .about-img-first, .our-programs .about-img-first {
   width: 60%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-.about-section-first .about-img-first img {
+.about-section-first .about-img-first img, .our-programs .about-img-first img {
   object-fit: cover;
   overflow: hidden;
   border-radius: 5rem;
@@ -237,6 +243,56 @@ footer img {
   font-family: "Nanum Myeongjo", serif;
 }
 
+/** Classes Main **/
+h2 {
+  color: black;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 600;
+  line-height: 3.25rem;
+  text-shadow: 0.025rem 0.025rem #000003;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.our-programs {
+  border: none;
+}
+.our-programs .card-programs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: none;
+  border: solid 0.0625rem #D9D9D9;
+  padding: 1rem 0;
+}
+.our-programs .card-programs .program-img {
+  width: 50%;
+}
+.our-programs .card-programs .program-img img {
+  width: 100%;
+}
+.our-programs .card-programs .card-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  width: 50%;
+  max-height: 80%;
+}
+.our-programs .card-programs .card-items h3 {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  text-align: center;
+}
+.our-programs .card-programs .card-items button {
+  align-self: center;
+}
+
 .mandala button {
   grid-column: 2/3;
   grid-row: 3/4;
@@ -265,6 +321,7 @@ button a {
   color: black;
 }
 
+/** Index Media Queries **/
 @media (max-width: 768px) {
   header {
     justify-content: space-evenly;
@@ -274,7 +331,7 @@ button a {
     width: 3.25rem;
     height: 3.25rem;
   }
-  header ul {
+  header nav ul {
     flex-direction: column;
     height: auto;
     padding-right: 0;
@@ -282,8 +339,8 @@ button a {
     gap: 0.5em;
     margin-top: 0.5rem;
   }
-  header a {
-    line-height: normal;
+  header nav ul a {
+    line-height: normal !important;
   }
   .img-mandala img {
     grid-row: 2/4;
@@ -296,20 +353,20 @@ button a {
     width: 100%;
     border: solid 0.0625rem #D9D9D9;
   }
-  .img-mandala {
+  .mandala .img-mandala {
     display: flex;
     flex-direction: column;
     align-self: center;
-    width: 100%;
+    width: 80%;
   }
-  .img-mandala img {
+  .mandala .img-mandala img {
     display: flex;
     align-items: center;
     width: 50%;
     margin: 0 auto;
   }
-  .img-mandala p {
-    width: 50%;
+  .mandala p {
+    margin: 0 20%;
   }
 }
 @media (max-width: 450px) {
@@ -343,11 +400,11 @@ button a {
   }
 }
 @media (max-width: 576px) {
-  .about-section-first {
+  .about-section-first, .our-programs {
     flex-direction: column;
     width: 100%;
   }
-  .about-section-first .about-text-first {
+  .about-section-first .about-text-first, .our-programs .about-text-first, .our-programs .card-programs .card-items {
     width: 90%;
   }
   .yoga-icons {
@@ -360,6 +417,43 @@ button a {
   .container .card-benefits p {
     font-size: 0.9375rem;
     width: 70%;
+  }
+}
+/** Classes Media Queries **/
+@media (max-width: 768px) {
+  .card-items h3 {
+    font-size: 1.375rem;
+  }
+  .card-items p {
+    font-size: 0.875rem;
+  }
+  .card-items button {
+    font-size: 0.875rem;
+  }
+}
+/** Classes Media Queries **/
+@media (max-width: 576px) {
+  .program-img img {
+    margin-bottom: 1rem;
+  }
+  .program-img .sola {
+    margin-top: 1rem;
+  }
+  .card-items {
+    width: 75% !important;
+  }
+}
+/** Classes Media Queries **/
+@media (max-width: 560px) {
+  .card-items p {
+    display: none;
+  }
+  .card-items h3 {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .card-items button {
+    font-size: 0.7rem;
   }
 }
 

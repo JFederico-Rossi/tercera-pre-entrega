@@ -1,0 +1,38 @@
+/** Classes Main **/
+
+h2{
+  @include font-h2;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.our-programs{
+    @extend .about-section-first;
+    border: none;
+     .card-programs{
+        width: 100%;
+        @include flex(row, wrap, space-evenly, center, none);
+        border: $borde-abajo;
+        padding: 1rem 0;
+        .program-img{
+            width: 50%;
+                img{
+                width: 100%;
+                }
+        }
+        .card-items{
+        @include flex(row, wrap, center, center, none);
+        @extend .about-text-first;
+        width: 50%;
+        max-height: 80%;
+            h3{
+            font-family: $font-principal;
+            font-weight: 700;
+            text-align: center;
+            }
+            button{
+            align-self: center;
+            }
+        }
+    }
+}

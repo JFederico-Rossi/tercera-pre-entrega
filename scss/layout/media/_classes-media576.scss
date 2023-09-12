@@ -1,0 +1,16 @@
+/** Classes Media Queries **/
+
+@media (max-width: 576px) {
+    .program-img{
+        img{
+            margin-bottom: 1rem;
+        }
+        .sola{
+            margin-top: 1rem;
+        }
+    }
+    .card-items{
+        width: 75% !important;
+        
+    }
+}
