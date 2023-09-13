@@ -1,0 +1,18 @@
+/** Contact Media Queries **/
+
+@media (max-width: 768px) {
+      .map{
+        flex-direction: column;
+        iframe{
+            width: 90%;
+        }
+        div{
+            margin-top: 1rem;
+            width: 100%;
+            ul{
+               text-align: center;
+                width: 100%;
+            }
+        }
+      }  
+}

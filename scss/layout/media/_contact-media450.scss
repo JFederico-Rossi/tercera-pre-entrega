@@ -1,0 +1,14 @@
+/** Contact Media Queries **/
+
+@media (max-width: 450px) {
+    iframe{
+        height: 15rem !important;
+    }
+    .form-img{
+        width: 80% !important;
+        img{
+            height: 15rem !important;
+        }
+    }
+       
+}

@@ -1,0 +1,36 @@
+/** Contact Media Queries **/
+
+@media (max-width: 320px) {
+   .map{
+    padding-bottom: 0.5rem;
+    iframe{
+        height: 10rem !important;
+    }
+    .section-form{
+        .free-lessons{
+            .form-items{
+                form{
+                    .personal-info{
+                    width: 9rem !important;
+                    }
+                    .submit{
+                        width: 5rem !important;
+                        font-size: 0.8rem !important;
+                    }
+                    ::placeholder{
+                        font-size: 0.8rem !important;
+                    }
+                }
+            }
+            .form-img{
+                width: 80% !important;
+                height: 13rem !important;
+                img{
+                    height: 10rem !important;
+                }
+            }
+        }
+    }
+   
+}
+}

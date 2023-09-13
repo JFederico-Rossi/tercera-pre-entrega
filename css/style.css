@@ -329,6 +329,117 @@ h2 {
   margin: -1.25rem 0 2.5rem 0;
 }
 
+.map {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.625rem;
+  padding-bottom: 2rem;
+  border-bottom: solid 0.0625rem #D9D9D9;
+}
+.map iframe {
+  width: 60%;
+  height: 25rem;
+  border: solid 20rem darkslategray;
+  box-shadow: 0.125rem 0.125rem 0.625rem grey;
+  border-radius: 0.5rem;
+  opacity: 80%;
+  margin-left: 0.625rem;
+}
+.map div {
+  width: 34%;
+  display: flex;
+  align-items: center;
+  gap: 0.0625rem;
+}
+.map div ul {
+  width: 90%;
+  list-style: none;
+}
+.map div ul li {
+  width: auto;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  line-height: 1.95rem;
+  word-spacing: 0.2em;
+  padding-right: 1em;
+}
+.map div ul li a {
+  text-decoration: none;
+  color: #212529;
+  text-align: center;
+  padding-right: 2.5rem;
+}
+
+.section-form {
+  width: 100%;
+  height: auto;
+  border: solid 0.0625rem #DDCDB9;
+}
+.section-form .free-lesson {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.875rem;
+}
+.section-form .free-lesson .form-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 40%;
+  height: fit-content;
+}
+.section-form .free-lesson .form-items form {
+  height: fit-content;
+}
+.section-form .free-lesson .form-items form .personal-info {
+  border: solid 1px #DDCDB9;
+  background-color: #DDCDB9;
+  border-radius: 0.6rem;
+  height: 2.25rem;
+  width: 12rem;
+  margin: -1rem auto -1rem auto;
+  font-family: "Nanum Myeongjo", serif;
+}
+.section-form .free-lesson .form-items form .submit {
+  border: solid 1px #C6B7A3;
+  background-color: #C6B7A3;
+  border-radius: 0.6rem;
+  height: 2.25rem;
+  width: 7rem;
+  margin-left: 2.1rem;
+  color: #fffff1;
+  font-family: "Nanum Myeongjo", serif;
+  text-align: center;
+  font-size: 1rem;
+}
+.section-form .free-lesson .form-items form ::placeholder {
+  color: #fffff1;
+  font-family: "Nanum Myeongjo", serif;
+  text-align: center;
+  font-size: 1rem;
+}
+.section-form .free-lesson .form-img {
+  display: flex;
+  width: 50%;
+  height: 18.75rem;
+  overflow: hidden;
+}
+.section-form .free-lesson .form-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 80%;
+  padding: 0.5rem 0 0.5rem 0;
+  overflow: hidden;
+  border-radius: 0.8rem;
+}
+
 .mandala button {
   grid-column: 2/3;
   grid-row: 3/4;
@@ -491,6 +602,61 @@ button a {
   }
   .card-items button {
     font-size: 0.7rem;
+  }
+}
+/** Contact Media Queries **/
+@media (max-width: 768px) {
+  .map {
+    flex-direction: column;
+  }
+  .map iframe {
+    width: 90%;
+  }
+  .map div {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .map div ul {
+    text-align: center;
+    width: 100%;
+  }
+}
+/** Contact Media Queries **/
+@media (max-width: 450px) {
+  iframe {
+    height: 15rem !important;
+  }
+  .form-img {
+    width: 80% !important;
+  }
+  .form-img img {
+    height: 15rem !important;
+  }
+}
+/** Contact Media Queries **/
+@media (max-width: 320px) {
+  .map {
+    padding-bottom: 0.5rem;
+  }
+  .map iframe {
+    height: 10rem !important;
+  }
+  .map .section-form .free-lessons .form-items form .personal-info {
+    width: 9rem !important;
+  }
+  .map .section-form .free-lessons .form-items form .submit {
+    width: 5rem !important;
+    font-size: 0.8rem !important;
+  }
+  .map .section-form .free-lessons .form-items form ::placeholder {
+    font-size: 0.8rem !important;
+  }
+  .map .section-form .free-lessons .form-img {
+    width: 80% !important;
+    height: 13rem !important;
+  }
+  .map .section-form .free-lessons .form-img img {
+    height: 10rem !important;
   }
 }
 
