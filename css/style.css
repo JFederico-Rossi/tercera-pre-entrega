@@ -612,7 +612,7 @@ button a {
   }
 }
 /** Classes Media Queries **/
-@media (max-width: 560px) {
+@media (max-width: 460px) {
   .card-items p {
     display: none;
   }
