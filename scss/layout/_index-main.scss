@@ -1,3 +1,6 @@
+/** Index Main **/
+
+
 .main-pic{
     background-image: url("../assets/images/cover-pic.png");
     background-size: cover;
@@ -16,7 +19,7 @@
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2,40%);
-    grid-template-rows: auto 12.5rem;
+    grid-template-rows: auto;
     justify-content: center;
     border-bottom: $borde-abajo;
     padding-bottom: 2rem;
@@ -58,6 +61,7 @@
        
     }
     p{
+        width: 70%;
         grid-column: 2/3;
         grid-row: 2/3;
         align-self: center;

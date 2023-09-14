@@ -1,3 +1,6 @@
+/** Header **/
+
+
 header{
     @include flex (row, nowrap, space-between, flex-end, 1.25rem);
     border-bottom: $borde-abajo;

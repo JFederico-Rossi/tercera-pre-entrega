@@ -5,11 +5,13 @@
   box-sizing: border-box;
 }
 
+/** Body **/
 body {
   background-image: linear-gradient(to right top, #f7fdfd, #eaf6ef, #e8ebdb, #efdeca, #f6cfc6);
   width: 100%;
 }
 
+/** Header **/
 header {
   display: flex;
   flex-direction: row;
@@ -57,6 +59,7 @@ header nav ul li a {
   text-shadow: 0.025rem 0.025rem #000003;
 }
 
+/** Index Main **/
 .main-pic {
   background-image: url("../assets/images/cover-pic.png");
   background-size: cover;
@@ -80,7 +83,7 @@ header nav ul li a {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(2, 40%);
-  grid-template-rows: auto 12.5rem;
+  grid-template-rows: auto;
   justify-content: center;
   border-bottom: solid 0.0625rem #D9D9D9;
   padding-bottom: 2rem;
@@ -124,6 +127,7 @@ header nav ul li a {
   padding-top: 1rem;
 }
 .mandala p {
+  width: 70%;
   grid-column: 2/3;
   grid-row: 2/3;
   align-self: center;
@@ -159,6 +163,7 @@ header nav ul li a {
   text-shadow: 0.025rem 0.025rem #000003;
 }
 
+/** Footer **/
 footer p {
   text-align: center;
   padding-top: 1rem;
@@ -170,6 +175,7 @@ footer img {
   margin: 6.25rem 0.2rem 0;
 }
 
+/** About Main **/
 .about-section-first, .our-programs {
   display: flex;
   flex-direction: row;
@@ -222,26 +228,6 @@ footer img {
   line-height: 3.25rem;
   text-shadow: 0.025rem 0.025rem #000003;
 }
-.container .card-benefits {
-  background-color: transparent;
-  max-width: 15rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: none;
-  border-radius: 0.8rem;
-}
-.container .card-benefits img {
-  width: 5.25rem;
-  height: 5.25rem;
-  opacity: 70%;
-  margin: 0.5rem 0 0.5rem 0;
-}
-.container .card-benefits p {
-  font-family: "Nanum Myeongjo", serif;
-}
 
 /** Classes Main **/
 h2 {
@@ -254,45 +240,7 @@ h2 {
   padding-top: 1rem;
 }
 
-.our-programs {
-  border: none;
-}
-.our-programs .card-programs {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: none;
-  border: solid 0.0625rem #D9D9D9;
-  padding: 1rem 0;
-}
-.our-programs .card-programs .program-img {
-  width: 50%;
-}
-.our-programs .card-programs .program-img img {
-  width: 100%;
-}
-.our-programs .card-programs .card-items {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: none;
-  width: 50%;
-  max-height: 80%;
-}
-.our-programs .card-programs .card-items h3 {
-  font-family: "Nanum Myeongjo", serif;
-  font-weight: 700;
-  text-align: center;
-}
-.our-programs .card-programs .card-items button {
-  align-self: center;
-}
-
+/** Shop Main **/
 .section-shop {
   width: 100%;
   display: flex;
@@ -302,33 +250,8 @@ h2 {
   align-items: center;
   gap: none;
 }
-.section-shop .card-shop .item {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: none;
-  align-items: center;
-  gap: 1.25rem;
-}
-.section-shop .card-shop img {
-  width: 12.5rem;
-  height: 16.5rem;
-  object-fit: fit;
-  overflow: hidden;
-  border-radius: 0.5rem;
-  border: solid 1px rgba(47, 79, 79, 0.691);
-  box-shadow: 0.125rem 0.125rem 0.625rem grey;
-  background-color: #D9D9D9;
-  padding: 0.3rem 0.5rem 2.5rem 0.5rem;
-  margin-bottom: -1.5rem;
-}
-.section-shop .card-shop p {
-  font-family: "Nanum Myeongjo", serif;
-}
-.section-shop .card-shop button {
-  margin: -1.25rem 0 2.5rem 0;
-}
 
+/** Contact Main **/
 .map {
   width: 100%;
   display: flex;
@@ -374,6 +297,127 @@ h2 {
   padding-right: 2.5rem;
 }
 
+/** Buttons **/
+.mandala button {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  align-self: center;
+  justify-self: center;
+  font-size: 0.9rem;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+button {
+  background-color: #D9D9D9;
+  box-shadow: 0.125rem 0.125rem 10rem rgba(255, 228, 196, 0.314);
+  border-radius: 1rem;
+  border-color: rgb(200, 184, 165);
+  padding: 0.425rem;
+  margin-top: 0.625rem;
+}
+
+button a {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.25rem;
+  word-spacing: 0.1rem;
+  text-decoration: none;
+  color: black;
+}
+
+/** Cards **/
+/** About **/
+.card-benefits {
+  background-color: transparent;
+  max-width: 15rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  border-radius: 0.8rem;
+}
+.card-benefits img {
+  width: 5.25rem;
+  height: 5.25rem;
+  opacity: 70%;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.card-benefits div p {
+  font-family: "Nanum Myeongjo", serif;
+}
+
+/** Classes **/
+.our-programs {
+  border: none;
+}
+.our-programs .card-programs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: none;
+  border: solid 0.0625rem #D9D9D9;
+  padding: 1rem 0;
+}
+.our-programs .card-programs .program-img {
+  width: 50%;
+}
+.our-programs .card-programs .program-img img {
+  width: 100%;
+}
+.our-programs .card-programs .card-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  width: 50%;
+  max-height: 80%;
+}
+.our-programs .card-programs .card-items h3 {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  text-align: center;
+}
+.our-programs .card-programs .card-items button {
+  align-self: center;
+}
+
+/** Shop **/
+.card-shop .item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: none;
+  align-items: center;
+  gap: 1.25rem;
+}
+.card-shop .item p {
+  font-family: "Nanum Myeongjo", serif;
+}
+.card-shop .item button {
+  margin: -1.25rem 0 2.5rem 0;
+}
+.card-shop div img {
+  width: 12.5rem;
+  height: 16.5rem;
+  object-fit: fit;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: solid 1px rgba(47, 79, 79, 0.691);
+  box-shadow: 0.125rem 0.125rem 0.625rem grey;
+  background-color: #D9D9D9;
+  padding: 0.3rem 0.5rem 2.5rem 0.5rem;
+  margin-bottom: -1.5rem;
+}
+
+/** Form Contacts **/
 .section-form {
   width: 100%;
   height: auto;
@@ -440,34 +484,6 @@ h2 {
   border-radius: 0.8rem;
 }
 
-.mandala button {
-  grid-column: 2/3;
-  grid-row: 3/4;
-  align-self: center;
-  justify-self: center;
-  font-size: 0.9rem;
-  font-family: "Nanum Myeongjo", serif;
-}
-
-button {
-  background-color: #D9D9D9;
-  box-shadow: 0.125rem 0.125rem 10rem rgba(255, 228, 196, 0.314);
-  border-radius: 1rem;
-  border-color: rgb(200, 184, 165);
-  padding: 0.425rem;
-  margin-top: 0.625rem;
-}
-
-button a {
-  font-family: "Nanum Myeongjo", serif;
-  font-weight: 400;
-  text-align: center;
-  line-height: 1.25rem;
-  word-spacing: 0.1rem;
-  text-decoration: none;
-  color: black;
-}
-
 /** Index Media Queries **/
 @media (max-width: 768px) {
   header {
@@ -525,6 +541,10 @@ button a {
   }
   .mandala p {
     width: 80%;
+    font-size: 0.8125rem !important;
+  }
+  .mandala .p-dos {
+    display: none;
   }
   .gallery {
     flex-direction: column;
@@ -622,7 +642,7 @@ button a {
   }
 }
 /** Contact Media Queries **/
-@media (max-width: 450px) {
+@media (max-width: 577px) {
   iframe {
     height: 15rem !important;
   }
@@ -646,10 +666,6 @@ button a {
   }
   .map .section-form .free-lessons .form-items form .submit {
     width: 5rem !important;
-    font-size: 0.8rem !important;
-  }
-  .map .section-form .free-lessons .form-items form ::placeholder {
-    font-size: 0.8rem !important;
   }
   .map .section-form .free-lessons .form-img {
     width: 80% !important;
