@@ -42,4 +42,4 @@ El sitio está enteramente redactado en inglés (incluyendo la información de l
 
 ## Screenshots
 
-![Kairos Yoga Studio - Home Page Screenshot](file:///Users/federicorossi/Desktop/Kairos%20Yoga%20Studio%20-%20Home.png)
+![Kairos Yoga Studio - Home Page Screenshot](./assets/images/Kairos%20Yoga%20Studio%20-%20Home.png)
